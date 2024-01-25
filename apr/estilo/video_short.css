@@ -61,6 +61,7 @@ header{
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
+    z-index: 1000;
     background: linear-gradient(to top,rgba(0, 0, 0, 0.015), rgba(0, 0, 0, 0.434));
 }
 .short_ceta_voltar{
