@@ -15,12 +15,16 @@ var span_edicao_nome = document.querySelector('.span_edicao_nome')
 var nome_edite = document.querySelector('.nome_edite')
 var desc_btn = document.querySelector('.desc_btn')
 var trocar_senha = document.querySelector('.trocar_senha')
+var descricao_usuario = document.querySelector('.descricao_usuario')
 
-var descricao = document.querySelector('#descricao')
-const LIMIT = 20
 
-    descricao.innerText.length > LIMIT ? '...' : ''
-   
+window.addEventListener('load', ()=>{
+    descricao_usuario.classList.add('para_descricao_esconder_texto')
+})
+
+descricao_usuario.addEventListener('click', ()=>{
+    descricao_usuario.classList.toggle('para_descricao_esconder_texto')
+})
 
 
 
@@ -235,7 +239,7 @@ const ParaNavBar = () =>{
     }
 }
 
-ParaNavBar()
+
 
 ceta_voltar.addEventListener('click', ()=>{
     window.location = 'index.html'

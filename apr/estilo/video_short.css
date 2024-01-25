@@ -68,7 +68,7 @@ header{
 }
 .short_ceta_voltar span{
     color: white;
-    font-size: .9em;
+    font-size: 1.2em;
     
 }
 .img_usuario{
@@ -116,7 +116,7 @@ img{
     width: 40px;
 }
 .videoSidebar .material-icons{
-    font-size: 20px;
+    font-size: 40px;
     cursor: pointer;
     color: white;
 }
@@ -133,7 +133,7 @@ img{
 
 .videoFooter {
     position: relative;
-    bottom: 150px;
+    bottom: 300px;
     margin-left: 20px;
     color: white;
     display: flex;

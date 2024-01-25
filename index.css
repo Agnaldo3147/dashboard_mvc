@@ -204,17 +204,21 @@ header{
     overflow: none !important;
 }
 
-.descricao{
-margin-left: 40px;
-height: 36px;
-overflow: hidden;
+.para_descricao_esconder_texto{
+    overflow: hidden !important;
+    white-space: nowrap !important;
+    text-overflow: ellipsis !important;
+    text-justify: auto !important;
 }
 
+.descricao{
+margin-left: 40px;
+height: auto;
+
+}
+
+
 .descricao p{
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    text-justify: auto;
     font-size: .8em;
     font-weight: 550;
 }
@@ -252,7 +256,7 @@ overflow: hidden;
 
 
 .menu_nav_bar{
-    position: absolute;
+
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
