@@ -74,7 +74,7 @@ header{
 .img_usuario{
     height: 40px;
     width: 80px;
-    margin-top: 5px;
+    margin-top: 7px;
     margin-right: 5px;
     display: flex;
     flex-direction: row;
@@ -133,7 +133,7 @@ img{
 
 .videoFooter {
     position: relative;
-    bottom: 220px;
+    bottom: 190px;
     margin-left: 20px;
     color: white;
     display: flex;

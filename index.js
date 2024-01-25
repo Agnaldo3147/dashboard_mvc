@@ -81,7 +81,7 @@ const InputEdicaoNome = (type, name, placeholder, action_form, method_get_post, 
     span_x.setAttribute('class', 'material-icons')
     span_x.style.cursor = 'pointer'
     span_x.style.color = 'black'
-    span_x.innerText = 'person'
+    span_x.innerText = 'close'
 
     
     const input_nome = document.createElement('input')
