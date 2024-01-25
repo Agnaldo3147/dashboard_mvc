@@ -29,7 +29,7 @@ const InputEdicaoNome = (type, name, placeholder, action_form, method_get_post, 
     
     const div_conteiner = document.createElement('div')
     div_conteiner.setAttribute('class', 'container_edicao')
-    div_conteiner.style.width = '70%'
+    div_conteiner.style.width = '300px'
     div_conteiner.style.height = '120px'
     div_conteiner.style.margin = 'auto'
     div_conteiner.style.backgroundColor = 'white'
@@ -91,6 +91,7 @@ const InputEdicaoNome = (type, name, placeholder, action_form, method_get_post, 
     input_nome.style.padding = '3px'
     input_nome.style.width = '70%'
     input_nome.style.borderBottom = '2px solid gold'
+
     input_nome.focus()
     
     span_x.addEventListener('click', ()=>{
@@ -264,7 +265,7 @@ const RolarNavBar = () =>{
     })
     playlist.addEventListener('click', (evt)=>{
         fotos.classList.remove('class_botton')
-        playlist.classList.remove('class_botton')
+        videos.classList.remove('class_botton')
         album.classList.remove('class_botton')
     
         playlist.classList.add('class_botton')
@@ -272,7 +273,7 @@ const RolarNavBar = () =>{
     })
     album.addEventListener('click', (evt)=>{
         playlist.classList.remove('class_botton')
-        playlist.classList.remove('class_botton')
+        videos.classList.remove('class_botton')
         album.classList.remove('class_botton')
     
         album.classList.add('class_botton')

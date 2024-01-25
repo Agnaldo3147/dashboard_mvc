@@ -33,19 +33,24 @@ a{
 
 header{
     width: 100%;
-    height: 5vh;
+    height: 30px;
     background-color: var(--c1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.perfil{
+.ceta_logo{
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    justify-content: center;
+    align-self: center;
 }
-.ceta_logo{
+.ceta_logo > a{
     display: flex;
-    flex-direction: row;
     align-items: center;
 }
 .ceta_logo span{
@@ -55,12 +60,14 @@ header{
     color: gold;
 }
 .ceta_logo p, span{
-    margin-top: 3px;
     margin-left: 6px;
 }
 
 .perfil_usuario{
     margin-right: 6px;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 .perfil_usuario p{
     color: white;
@@ -94,11 +101,19 @@ header{
     position: absolute;
     bottom: 0px;
     left: 170px;
+    text-align: center;
     width: 40px;
     height: 40px;
     border-radius: 50%;
     background-color: #5ad681;
     cursor: pointer;
+}
+
+.btn_upload span{
+    font-size: 1.3em;
+    color: white;
+    text-align: center;
+    margin-top: 8px;
 }
 
 .aux{
@@ -133,7 +148,6 @@ header{
 }
 
 .nome_edite{
-   
     padding: 10px;
     display: flex;
     flex-direction: row;
@@ -152,9 +166,11 @@ header{
 
 .nome p{
     font-size: .9em;
+    color: rgba(0, 0, 0, 0.856);
 }
 
 .nome > .paragrafo_nome_ususario{
+    color: rgba(0, 0, 0, 0.856);
     font-weight: 550;
 }
 
@@ -295,7 +311,6 @@ main{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: aqua;
 }
 
 .container_videos{
@@ -337,7 +352,6 @@ main{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: red;
 }
 
 .container_fotos{
@@ -378,7 +392,7 @@ main{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: #5ad681;
+    
 }
 
 .container_playlist{
@@ -419,7 +433,7 @@ main{
     flex-wrap: wrap;
     margin-top: 20px;
     width: 100%;
-    background-color: #35794B;
+    
 }
 
 .container_album{
@@ -458,7 +472,7 @@ main{
 }
     footer{
         width: 100%;
-        height: 7vh;
+        height: 30px;
         position: fixed;
         bottom: 0px;
         left: 0px;

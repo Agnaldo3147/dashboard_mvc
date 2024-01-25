@@ -1,0 +1,81 @@
+
+
+@media screen and (min-width: 500px) {
+
+    
+    body{
+        height: 100vh;
+        /*CENTRALIZA OS ELEMENTOS*/
+        display: grid;
+        place-items: none;
+    }
+
+    header{
+        display: block;
+        display: flex;
+        height: 8vh;
+        width: 100vw;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    form.pesquisa_video_imagem{
+        height: 100%;
+        width: 75%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    form.pesquisa_video_imagem > input{
+        width: 75%;
+        padding: 8px;
+        border-radius: 10px;
+        margin-left: 20px;
+        border: .8px solid greenyellow;
+    }
+    form.pesquisa_video_imagem > button{
+        border: none;
+        padding: 6px;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        cursor: pointer;
+    }
+    div.logo_hustle{
+        margin-left: 5px;
+    }
+    div.menu{
+        margin-right: 10px;
+        cursor: pointer;
+    }
+
+    div.app__videos{
+        position: relative;
+        height: 90%;
+        width: 250px;
+        object-fit: cover;
+        object-position: center center;
+        overflow: scroll;
+        scroll-snap-type: y mandatory;
+        border-radius: 20px;
+    }
+    .header_video_player{
+        display: none;
+    }
+    .videoSidebar__button{
+        display: none;
+    }
+    div.container_menu_computador{
+        width: 50px;
+        display: block;
+    }
+
+    div.info_menu{
+        display: block;
+    }
+
+
+}
