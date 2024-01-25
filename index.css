@@ -1,0 +1,507 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --c1: #35794B;
+    --c2: #234214;
+    --verde_claro: #5ad681;
+    --cor_body: rgba(196, 194, 194, 0.436);
+    --c3: #A6CE95;
+    --c4: #BAD9AD;
+    --c5: #E0EFDD;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+.span_edicao{
+    font-size: .95em;
+    cursor: pointer;
+}
+
+header{
+    width: 100%;
+    height: 5vh;
+    background-color: var(--c1);
+}
+
+.perfil{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.ceta_logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.ceta_logo span{
+    color: white;
+}
+.ceta_logo p{
+    color: gold;
+}
+.ceta_logo p, span{
+    margin-top: 3px;
+    margin-left: 6px;
+}
+
+.perfil_usuario{
+    margin-right: 6px;
+}
+.perfil_usuario p{
+    color: white;
+}
+
+.container_img_btn{
+    width: 300px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.img img{
+    object-fit: cover;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.btn_upload{
+    position: fixed;
+    position: absolute;
+    bottom: 0px;
+    left: 170px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #5ad681;
+    cursor: pointer;
+}
+
+.aux{
+    position: absolute;
+    bottom: 0px;
+    left: 170px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #234214;
+    z-index: 3;
+}
+
+.btn_upload > input{
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #234214;
+}
+
+.container_outras_info{
+    width: 100%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.868);
+}
+
+.container_outras_info span{
+    color: var(--c1);
+}
+
+.nome_edite{
+   
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.nome_edite:hover{
+    background-color: var(--c5);
+}
+.nome{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.nome p{
+    font-size: .9em;
+}
+
+.nome > .paragrafo_nome_ususario{
+    font-weight: 550;
+}
+
+.container_outras_info > .nome_edite > div.edicao{
+    cursor: pointer;
+}
+
+.desc_btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 8px;
+    cursor: pointer;
+
+}
+.desc_btn:hover{
+    background-color: var(--c5);
+}
+
+.para_desc{
+    margin-bottom: 5px;
+}
+.desc_btn > .btn_span{
+   
+    cursor: pointer;
+}
+
+/*CLASS PARA ACTIVAR POR JAVASCRIPT*/
+.descricao__{
+    height: auto !important;
+    overflow: none !important;
+}
+
+.descricao{
+margin-left: 40px;
+height: 36px;
+overflow: hidden;
+}
+
+.descricao p{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-justify: auto;
+    font-size: .8em;
+    font-weight: 550;
+}
+
+.trocar_senha{
+    margin-top: 5px;
+    width: 100%;
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    cursor: pointer;
+   
+}
+
+.trocar_senha:hover{
+    background-color: var(--c5);
+}
+
+.trocar_senha > span{
+    
+}
+
+.seguidores{
+    display: flex;
+}
+.seguidores > p.seguidores{
+    color: rgba(0, 0, 0, 0.824);
+}
+
+.seguidores p{
+    margin-left: 8px;
+}
+
+
+.menu_nav_bar{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin-top: 30px;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.37);
+    padding: 4px;
+    transition: border_botton .3s;
+}
+
+.menu_nav_bar > button{
+    text-align: center;
+    margin-bottom: -4.5px;
+    font-size: .9em;
+    padding: 5px;
+    width: 70px;
+    background-color: white;
+    color: black;
+    border: none;
+    border: unset;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.37);
+    outline: none;
+    cursor: pointer;
+    transition: border-bottom .3s;
+}
+
+.class_botton{
+    border-bottom: 2px solid gold !important;
+}
+
+
+
+.menu_nav_bar > a:hover{
+    background-color: var(--c5);
+}
+
+main{
+   margin: 0 auto;
+   width: 100%;
+   overflow: hidden;
+}
+.slider_bar{
+    width: 400%;
+    height:  auto;
+    display: flex;
+    flex-wrap: nowrap;
+    transition: margin-left .3s;
+}
+
+/*ESTAS SÃ0 AS CONFIGURAÇÕES DO MEU USUARIO, OU SEJA, AONDE ELE VAI GURDAR OS VÍDEOS*/
+
+.videos_usuario{
+    width: 100%;
+    margin-top: 20px; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: aqua;
+}
+
+.container_videos{
+    width: 29.333333%;
+    height: 250px;
+    margin-left: 2%;
+    margin-right: 2%;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.guarda_videos{
+    width: 100%;
+    height: 200px;
+    border-radius: 15px;
+    
+}
+
+.guarda_videos video{
+    object-fit: cover;
+    border-radius: 15px;
+    width: 100%;
+    height: 200px;
+}
+
+.titulo_video{
+    margin-top: 5px;
+    text-indent: 5px;
+    font-size: .85em;
+}
+
+
+/*ESTAS SÃO AS CONFIGURAÇÕES DAS FOTOS DO USUARIO*/
+
+.fotos_usuario{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: red;
+}
+
+.container_fotos{
+    width: 44%;
+    height: 320px;
+    margin-left: 3%;
+    margin-right: 3%;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.guarda_fotos{
+    width: 100%;
+    height: 280px;
+    border-radius: 15px;
+}
+.guarda_fotos img{
+    object-fit: cover;
+    border-radius: 15px;
+    width: 100%;
+    height: 250px;
+}
+
+.titulo_fotos{
+    margin-top: 5px;
+    text-indent: 5px;
+    font-size: .85em;
+}
+
+
+
+/*CONFIGURAÇÕES DA MINHA PLAYLIST*/
+
+.playlist_usuario{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #5ad681;
+}
+
+.container_playlist{
+    width: 29.333333%;
+    height: 250px;
+    margin-left: 2%;
+    margin-right: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+.guarda_playlist{
+    width: 100%;
+    height: 200px;
+    border-radius: 15px;
+
+}
+
+.guarda_playlist video{
+    object-fit: cover;
+    border-radius: 15px;
+    width: 100%;
+    height: 200px;
+}
+
+.titulo_playlis{
+        margin-top: 5px;
+        text-indent: 5px;
+        font-size: .85em;    
+        cursor: pointer;
+    }
+
+    /*CONFIGURAÇÕES DO MEU ALBUM*/
+
+.album_usuario{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    width: 100%;
+    background-color: #35794B;
+}
+
+.container_album{
+    width: 44%;
+    height: 320px;
+    margin-left: 3%;
+    margin-right: 3%;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.guarda_album{
+    width: 100%;
+    height: 280px;
+    border-radius: 15px;
+}
+
+.guarda_album img{
+    object-fit: cover;
+    border-radius: 15px;
+    width: 100%;
+    height: 250px;
+    
+}
+
+.titulo_album{
+    margin-top: 5px;
+    text-indent: 5px;
+    font-size: .85em;
+}
+
+.home_footer, .chat_footer, .notificacao_footer, .pagamento_footer  span{
+    
+    
+}
+    footer{
+        width: 100%;
+        height: 7vh;
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        
+        border-top: 1px solid rgba(0, 0, 0, 0.114);
+        background-color: white;
+    }
+    footer span{
+        color: var(--c1);
+    }
+    .home_link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .home_footer{
+        margin-left: 2%;
+    }
+    .pagamento_footer{
+        margin-right: 2%;
+    }
+    .home_footer, .chat_footer, .notificacao_footer, .pagamento_footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1%;
+        width: 40px;
+        border-radius: 5px;
+        
+    }
+    .mesmo_span{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .mesmo_span span{
+        margin-right: 5px;
+    }
+    .mesmo_nome:hover{
+        background-color: var(--c5);
+    }
